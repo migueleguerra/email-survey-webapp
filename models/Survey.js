@@ -1,4 +1,4 @@
-const mongoose = requrie("mongoose");
+const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const recipientSchema = require("./Recipient");
 
@@ -9,7 +9,7 @@ const surveySchema = new Schema({
   recipients: [recipientSchema],
   yes: {
     type: Number,
-    dfault: 0
+    default: 0
   },
   no: {
     type: Number,
